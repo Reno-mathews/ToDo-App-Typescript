@@ -4,6 +4,8 @@
     // File Layout
     // "rootDir": "./src",
     // "outDir": "./dist",
+    "module": "esnext",
+    "mod"
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
