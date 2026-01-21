@@ -22,4 +22,23 @@ router.post("/", async (req, res) => {
     res.json(newTodo);
  });
 
- 
+router.post("/", async (req, res) => {
+    const {title} = req.body;
+    const newTodo = new Todo({ title });
+    await newTodo.save();
+    res.json(newTodo);
+});
+
+router.put("/:id", async (req, res) => {
+    const { id } = req.params;
+    const updated = await Todo.findByIdAndUpdate(id, req.body, { new: true });
+    res.json(updated);
+});
+
+router.delete("/:id", async (req, res) => {
+    const { id } = req.params;
+    await Todo.findByIdAndDelete(id);
+    res.json({ message: "Deleted" });
+});
+
+export default router;
