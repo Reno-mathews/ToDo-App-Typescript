@@ -41,7 +41,7 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
 
-    "module": "CommonJS",
+    "module": "ESNext",
     "moduleResolution": "Node"
   
 

@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import todoRoutes from "./routes/todoRoutes.js";
+import todoRoutes from "./routes/todoRoutes";
 
 const app = express();
 

@@ -48,7 +48,7 @@ function App() {
         {todos.map(todo => (
           <li key={todo._id}>
             {todo.title}
-            <button onClick={() => deleteTodo(todo._id)}>X</button>
+            <button onClick={() => deleteTodo(todo_id)}>X</button>
           </li>
         ))}
       </ul>
