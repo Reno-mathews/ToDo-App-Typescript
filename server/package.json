@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "dev": "nodemon src/index.ts",
-  "start": "ts-node src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "start": "ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "mongoose": "^9.1.5"
   },
