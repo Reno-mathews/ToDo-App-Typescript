@@ -10,4 +10,4 @@ const todoSchema = new Schema<ITodo>({
     completed: {type: Boolean, default: false}
 });
 
-export default model<ITodo>("Todo", todoSchema); 
+export default model<ITodo>("Todo", todoSchema);
